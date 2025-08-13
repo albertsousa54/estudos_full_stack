@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas No HTML</title>
+</head>
+<body>
+    <div>
+        <h1>Criação de Tabelas no HTML.</h1>
+
+        <h2>Definição</h2>
+        <p>Para criarmos tabelas no HTML temos varias tags que podem e devem ser utilizadas. Abaixo veja o exemplo de algumas delas e como utilizar.</p>
+            <ol>
+                <li>A principal tag utilizada para criar uma tabela é: <strong>&lt;table&gt;&lt;/table&gt;.</strong></li>
+                <li>Para criarmos as linhas de uma tabelas utilizamos a tag: <strong>&lt;tr&gt;&lt;/tr&gt;.</strong> Que significa Table Row ou linha da tabela.</li>
+                <li>Agora para criarmos a coluna de uma tabelas utilizamos a tag: <strong>&lt;td&gt;&lt;/td&gt;.</strong>Table Data ou dados da tabela define uma célula dentro da tabela.</li>    
+                    <p>Aleém das celulas de dados temos as celulas de cabeçalho, assim como temos cabeçalho de uma pagina HTML. Vejamos abaixo.</p>
+                <li>Para definir o cabeça de uma tabela no HTML utilizamos a tag: <strong>&lt;th&gt;&lt;/th&gt;.</strong></li> 
+            </ol>
+        <br>
+        <br>
+        <hr>
+        <br><br>
+        <table border="1">
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+            </tr>
+            <tr>
+                <td>Dado 3</td>
+                <td>Dado 4</td>
+            </tr>
+        </table>
+
+        <hr>
+
+        <h2>Tabelas com cabeçalho</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>25</td>
+                        <td>Advogada</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <hr>
+
+        <h2>Tabelas com células personalizadas</h2>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th colspan="2">Informações Pessoais</th>
+                    <th>Contato</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nome:</td>
+                    <td>João</td>
+                    <td rowspan="2">Telefone: 123456</td>
+                </tr>
+                <tr>
+                    <td>Idade:</td>
+                    <td>30</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
