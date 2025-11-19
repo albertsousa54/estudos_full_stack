@@ -1,0 +1,69 @@
+/* Seletor Universal - com seletor universal podemos aplicar estilos a todos os elementos de uma pagina de uma unica vez. */
+* {
+    margin: 0; /*Ao zerarmos o margin e padding estamos removendo os estilos que os proprios navegadores imlementam. Com isso podemos seguir com a nossa estilização.*/
+    padding: 0;
+} 
+
+header, footer { /* Seletor de Tags - com seletor de tags podemos aplicar as estilizações que desejamos na tag especifica. Também podemos estizar a mais de uma tag por vez seperando as tags por virgula */
+    background-color: #333;
+    color: #ffffff;
+    padding: 10px;
+}
+
+/* Seletor de tags aninhadas - nesse cenario abaixo as estilizações que fizermos serão aplciadas a todas as "a" que estão abaixo do objeto pai. */
+nav a {
+    color: #27ae60;
+}
+
+/* Seletor de tags filhos - neste cenario a estilização é feita na primeira tag imediatamente abaixo da tag pai.*/
+nav > a {
+    display: block;
+    color: #f5a623;
+    padding: 10px;
+}
+
+/* Seletores de classe - é um dos seletores mais utilizados. Para chamar um seletor de classe devemos fazer assim: ".nome_da_classe" */
+
+.laranja {
+    color: #f5a623;
+}
+
+.verde {
+    color: #27ae60;
+}
+
+/* Seletor de ID - Para chamar um seletor de ID devemos fazer assim: "#nome_do_ID"*/
+
+#secao-principal {
+    padding: 20pc;
+    text-align: center;
+}
+
+/* combinação de seletores */
+#secao-principal > * {
+    margin-top: 10px;
+}
+
+input {
+    display: block;
+    padding: 5px;
+    margin: 5px;
+}
+
+/* seletor de sequência */
+input + input {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h2 + p {
+    padding: 30px;
+}
+
+/* seletores de propriedade */
+input[name="email"] {
+    background-color: #f5a623;
+}
+
+input[type="password"] {
+    background-color: #27ae60;
+}
