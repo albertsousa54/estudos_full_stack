@@ -4,50 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 03</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Bookshelf</h1>
-        <p>Explore nosso catálogo e mergulhe em histórias incriveis.</p>
+        <p>Explore nosso catálogo e mergulhe em histórias incríveis.</p>
     </header>
 
-    <section >
-        <h2>Leia a Qualquer Hora, em Qualquer Lugar</h2>
-        
-        <p>Aproveite o acesso instantâneo a uma ampla variedade de livros em seu dispositivo favorito.</p>
-        
-        <button class="btn" class="btn_black">Inscreva-se</button>
-        
-        <img src="img_01.png" alt="">
-    </section>
-
     <main>
-        <div>
+        <section class="feature">
+            <h2>Leia a Qualquer Hora, em Qualquer Lugar</h2>
+            <p>Aproveite o acesso instantâneo a uma ampla variedade de livros em seu dispositivo favorito.</p>
+            <a href="#" class="cta-button">Inscreva-se</a>
+            <img src="img_01.png" alt="Pessoa lendo um livro">
+        </section>
+
+        <section class="catalog">
             <h2>Explore Nosso Catálogo</h2>
-            
-            <p>Descubra milhares de livros de diversos gêneros, do romance á ficção cientifica.</p>
-            
-            <nav>
-                <button class="btn">Romance</button>
-                <button class="btn">Ficção Cientifica</button>
-                <button class="btn">Mistério</button>
-                <button class="btn">Fantasia</button>
-                <button class="btn">Suspense</button>
-                <button class="btn_black" class="btn">Ver mais</button>
-            </nav>
+            <p>Descubra milhares de livros de diversos gêneros, do romance à ficção científica.</p>
+            <ul class="genres">
+                <li class="genre"><a href="#">Romance</a></li>
+                <li class="genre"><a href="#">Ficção Científica</a></li>
+                <li class="genre"><a href="#">Mistério</a></li>
+                <li class="genre"><a href="#">Fantasia</a></li>
+                <li class="genre"><a href="#">Suspense</a></li>
+                <li class="see-more"><a href="#">Ver Mais</a></li>
+            </ul>
+        </section>
 
-            <h2>Comece sua aventura literária</h2>
+        <section class="cta">
+            <h2>Comece Sua Aventura Literária</h2>
             <p>Inscreva-se agora e desfrute de um mundo de histórias emocionantes.</p>
-
-            <button class="btn" class="btn_black">Inscreva-se</button>
-        </div>
-        
+            <a href="#" class="cta-button">Inscreva-se</a>
+        </section>
     </main>
 
-    <footer>&copy; 2025 Bookshelf</footer>
+    <footer>
+        <p>© 2023 Bookshelf</p>
+    </footer>
 </body>
 </html>
